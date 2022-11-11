@@ -9,5 +9,4 @@ const nextConfig = {
     domains: ['cdn.pixabay.com', 'lh3.googleusercontent.com']
   }
 }
-
 module.exports = nextConfig
