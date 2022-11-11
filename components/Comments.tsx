@@ -55,7 +55,7 @@ const Comments = ({ comment, setComment, addComment, comments, isPostingComment 
                         </div>
                       </Link>
                       <div>
-                        <p className='-mt-5 ml-16 text-[16px] mr-8'>
+                        <p className='-mt-5 ml-16 text-[16px] mr-8' key={idx}>
                           {item.comment}
                         </p>
                       </div>
