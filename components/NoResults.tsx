@@ -1,13 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { BiCommentX } from 'react-icons/bi';
 
-interface IProps { 
+interface IProps {
   text: string;
 }
 
-const NoResults = ({text} : IProps) => {
+const NoResults = ({ text }: IProps) => {
   return (
-    <div>NoResults</div>
-  )
-}
+    <div className='flex flex-col justify-center items-center h-full w-full'>
+      <p className='text-8xl'>
+        <BiCommentX />
+      </p>
+      <p className='text-2xl text-center'>{text}</p>
+    </div>
+  );
+};
 
-export default NoResults
+export default NoResults;
